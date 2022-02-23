@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 html body {
   background-color: #0A0A0A;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 html body ul,
@@ -81,13 +84,22 @@ html body a:hover {
 html body .myBtn {
   background: #FF7A00;
   color: #fff;
-  padding: 10px 34px;
+  padding: 8px 40px;
   text-align: center;
   border-radius: 50px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+html body .myBtn.outLine {
+  background: #1C1D1E;
+  border: 3px solid #FF7A00;
+}
+
+html body .myBtn.outLine:hover {
+  color: #fff;
 }
 
 html body .navBar {
@@ -107,11 +119,110 @@ html body .navBar ul li {
   margin-right: 50px;
 }
 
-html body .navBar .myBtn h6 {
-  margin-top: 5px;
+html body .navBar .myBtn {
+  margin-left: auto;
 }
 
 html body .navbarLine {
   padding-top: 160px;
+}
+
+html body .header {
+  padding: 70px 0 150px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+html body .header .headerBorder {
+  position: absolute;
+  width: 681px;
+  height: 520px;
+  border: 10px solid #FF7A00;
+  border-right-color: transparent;
+  border-radius: 5px;
+  top: -58px;
+  right: -200px;
+  z-index: -1;
+}
+
+html body .header h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+html body .header p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  margin: 73px 0 85px;
+  width: 60%;
+}
+
+html body .howWork {
+  background: url(../image/headerImg.png) no-repeat center;
+  background-attachment: fixed;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
+}
+
+html body .howWork .h2 {
+  text-align: center;
+  position: relative;
+}
+
+html body .howWork .h2::before, html body .howWork .h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 200px;
+  height: 3px;
+  background-color: #FF7A00;
+}
+
+html body .howWork .h2::after {
+  right: -90px;
+}
+
+html body .howWork .h2::before {
+  left: -90px;
+}
+
+html body .howWork h4 {
+  font-weight: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: rgba(255, 122, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 18px;
+}
+
+html body .howWork h3 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html body .howWork .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000a1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 /*# sourceMappingURL=main.css.map */

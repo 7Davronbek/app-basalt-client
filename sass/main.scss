@@ -2,11 +2,15 @@ $backgroundColor: #0A0A0A;
 $mainColor: #E19C2A;
 $secondaryColor: #FF7A00;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
 
 html {
 
     body {
         background-color: $backgroundColor;
+    //  background: linear-gradient(0deg, #0A0A0A, #222), #000000; 
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
 
         ul,
         li {
@@ -78,10 +82,19 @@ html {
         .myBtn {
             background: $secondaryColor;
             color: #fff;
-            padding: 10px 34px;
+            padding: 8px 40px;
             text-align: center;
             border-radius: 50px;
             user-select: none;
+
+            &.outLine {
+                background: #1C1D1E;
+                border: 3px solid #FF7A00;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
         } 
 
         .navBar {
@@ -98,22 +111,110 @@ html {
 
                 li {
                     margin-right: 50px;
-
-                    a {
-
-                    }
                 }
             }
 
             .myBtn {
-                h6 {
-                    margin-top: 5px;
-                }
+                margin-left: auto;
             }
         }
 
         .navbarLine {
             padding-top: 160px;
+        }
+
+        .header {
+            padding: 70px 0 150px;
+            position: relative;
+            overflow-x: hidden;
+
+            .headerBorder {
+                position: absolute;
+                width: 681px;
+                height: 520px;
+                border: 10px solid $secondaryColor;
+                border-right-color: transparent;
+                border-radius: 5px;
+                top: -58px;
+                right: -200px;
+                z-index: -1;
+            }
+
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                margin: 73px 0 85px;
+                width: 60%;
+            }
+        }
+
+        .howWork {
+            background: url(../image/headerImg.png) no-repeat center;
+            background-attachment: fixed;
+            height: 500px;
+            background-size: cover;
+            position: relative;
+            padding: 60px 0;
+
+            .h2 {
+                text-align: center;
+                position: relative;
+
+                &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 200px;
+                    height: 3px;
+                    background-color: $secondaryColor;
+                }
+
+                &::after {
+                    right: -90px;
+                }
+
+                &::before {
+                    left: -90px;
+                }
+            }
+
+            h4 {
+                font-weight: normal;
+                user-select: none;
+                font-size: 60px;
+                line-height: 73px;
+                letter-spacing: 0.05em;
+                font-weight: 400;
+                color: rgba(255, 122, 0, 0.5);
+                font-family: 'Montserrat', sans-serif;
+                margin-right: 18px;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.09em;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .blur {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #000000a1;
+                backdrop-filter: blur(10px);
+            }
         }
 
     }
