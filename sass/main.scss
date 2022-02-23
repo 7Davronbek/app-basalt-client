@@ -1,0 +1,120 @@
+$backgroundColor: #0A0A0A;
+$mainColor: #E19C2A;
+$secondaryColor: #FF7A00;
+
+
+html {
+
+    body {
+        background-color: $backgroundColor;
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0 !important;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+
+            .card-body {
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            position: fixed;
+            z-index: 999999;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            h5 {
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-bottom: 0;
+        }
+
+        img {
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            outline: none !important;
+
+            &:hover {
+                text-decoration: none !important;
+                color: #ccc;
+            }
+        }
+
+        .myBtn {
+            background: $secondaryColor;
+            color: #fff;
+            padding: 10px 34px;
+            text-align: center;
+            border-radius: 50px;
+            user-select: none;
+        } 
+
+        .navBar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            padding: 30px 0;
+
+
+            ul {
+                margin-left: 40px;
+
+                li {
+                    margin-right: 50px;
+
+                    a {
+
+                    }
+                }
+            }
+
+            .myBtn {
+                h6 {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .navbarLine {
+            padding-top: 160px;
+        }
+
+    }
+}

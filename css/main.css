@@ -1,0 +1,402 @@
+/************************* FONT STYLE ***************/
+@font-face {
+  font-family: "MazzardH-Bold";
+  src: url("../assets/fonts/MazzardH-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "MazzardH-ExtraBold";
+  src: url("../assets/fonts/MazzardH-ExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "gilroy-bold";
+  src: url("../assets/fonts/gilroy-bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../assets/fonts/gilroy-regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../assets/fonts/gilroy-semibold.ttf") format("truetype"); }
+.m-bold {
+  font-family: "MazzardH-Bold", sans-serif; }
+
+.m-extra {
+  font-family: "MazzardH-ExtraBold", sans-serif; }
+
+.g-semiBold {
+  font-family: "Gilroy-Semibold", sans-serif; }
+
+.g-bold {
+  font-family: "Gilroy-Bold", sans-serif; }
+
+.g-regular {
+  font-family: "Gilroy-Regular", sans-serif; }
+
+.icon {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #1B4D4A; }
+  .icon.icon-right {
+    mask-image: url("../assets/icon/right.svg");
+    -webkit-mask-image: url("../assets/icon/right.svg"); }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden; }
+  html body {
+    background: #F8F8F8; }
+    html body ul, html body li {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+    html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body p {
+      margin-bottom: 0; }
+    html body .cursor {
+      cursor: pointer; }
+    html body a {
+      color: #2E2E2E; }
+      html body a:hover {
+        color: #535353;
+        text-decoration: none; }
+    html body .myBtn {
+      font-weight: 500;
+      transition: all .5s ease-in-out;
+      border-radius: 7px;
+      cursor: pointer; }
+      html body .myBtn:hover {
+        transform: translateY(-3px); }
+    html body .zed {
+      z-index: 99; }
+    html body .header {
+      background-color: #fff;
+      padding: 25px 0 29px; }
+      html body .header .a {
+        padding: 12px 24px 11px 18px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #1B4D4A;
+        border: 1px solid #1B4D4A;
+        border-radius: 7px;
+        margin-right: 12px;
+        margin-left: 20px; }
+        html body .header .a span {
+          margin-right: 12px !important; }
+      html body .header .input-group input, html body .header .input-group .btn {
+        background: #F5F5F5 !important; }
+      html body .header .input-group input {
+        border-radius: 7px 0 0 7px;
+        padding: 11px 0px 10px 20px; }
+      html body .header .input-group .btn {
+        border-radius: 0 7px 7px 0; }
+      html body .header ul li {
+        margin-right: 10px; }
+        html body .header ul li a {
+          font-weight: 500 !important;
+          font-size: 12px;
+          line-height: 15px;
+          color: #2E2E2E; }
+      html body .header .language {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #A6A6A6;
+        padding: 11px 13px;
+        border: 1px solid #C4C4C4;
+        border-radius: 7px;
+        margin-right: 12px; }
+      html body .header .enter {
+        padding: 11px 23px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background: #1B4D4A;
+        border-radius: 7px; }
+    html body .section {
+      padding: 21px 0 29px; }
+      html body .section b {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000; }
+      html body .section .miniKalendar .btn {
+        background: #FFFFFF;
+        border: 1px solid #1B4D4A;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 180px;
+        padding: 12px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1B4D4A; }
+      html body .section .miniKalendar .kalendarCard {
+        user-select: none;
+        top: 126%;
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px -1px 30px rgba(0, 0, 0, 0.14);
+        border-radius: 10px;
+        padding: 27px 24px 25px 24px;
+        width: 365px;
+        left: -101%;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all .3s linear; }
+        html body .section .miniKalendar .kalendarCard h5 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          color: #000000;
+          margin-bottom: 13px !important; }
+          html body .section .miniKalendar .kalendarCard h5 .cancel {
+            right: -4%;
+            top: -100%; }
+        html body .section .miniKalendar .kalendarCard .weeks {
+          margin-top: 13px;
+          margin-bottom: 4px; }
+          html body .section .miniKalendar .kalendarCard .weeks .week {
+            border: 1px solid #E1E1E1;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 41px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 4px; }
+            html body .section .miniKalendar .kalendarCard .weeks .week h6 {
+              font-weight: 600;
+              font-size: 10px;
+              line-height: 18px;
+              color: #000000; }
+        html body .section .miniKalendar .kalendarCard .days .day {
+          background: #F8F8F8;
+          border-radius: 5px;
+          width: 42px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 3px;
+          margin-bottom: 4px;
+          transition: all .3s ease-in-out;
+          cursor: pointer; }
+          html body .section .miniKalendar .kalendarCard .days .day h6 {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 18px;
+            color: #000000;
+            transition: all .3s ease-in-out; }
+          html body .section .miniKalendar .kalendarCard .days .day.actived {
+            background-color: #fff;
+            color: #A4A4A4; }
+          html body .section .miniKalendar .kalendarCard .days .day:hover {
+            background-color: #FFCC91;
+            color: #000; }
+        html body .section .miniKalendar .kalendarCard a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1E524F; }
+        html body .section .miniKalendar .kalendarCard.show {
+          opacity: 1;
+          transform: translateX(0); }
+      html body .section input {
+        background: #FFFFFF;
+        border: 1px solid #1B4D4A;
+        box-sizing: border-box;
+        border-radius: 10px; }
+      html body .section .date {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1B4D4A;
+        width: 190px; }
+      html body .section .time {
+        width: 120px; }
+      html body .section h5 {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A4A4A4; }
+      html body .section h1 {
+        margin: 21px 0 29px 0 !important;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 18px;
+        color: #000000; }
+      html body .section h3, html body .section .btn1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000; }
+      html body .section .btn1 {
+        font-weight: 400;
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 15px 19px; }
+      html body .section h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18px;
+        color: #000000; }
+      html body .section .search {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        background: #FFCC91;
+        border-radius: 10px;
+        color: #222222;
+        padding: 13px 21px; }
+        html body .section .search span {
+          margin-right: 15px; }
+      html body .section .plus {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        background: #1B4D4A;
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 13px 19px; }
+        html body .section .plus span {
+          margin-right: 12px; }
+    html body .content {
+      padding: 0 0 53px; }
+      html body .content a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000; }
+      html body .content .second .nav-item {
+        width: 100%;
+        margin-bottom: 8px; }
+        html body .content .second .nav-item .nav-link {
+          padding: 16px 20px 16px 20px;
+          border-radius: 10px;
+          text-align: left !important;
+          background-color: #fff;
+          transition: all .3s ease-in-out; }
+          html body .content .second .nav-item .nav-link .span, html body .content .second .nav-item .nav-link .span2 {
+            transform: translateX(8px) translateY(1px); }
+          html body .content .second .nav-item .nav-link.active, html body .content .second .nav-item .nav-link:hover {
+            background-color: #1B4D4A;
+            color: #fff; }
+            html body .content .second .nav-item .nav-link.active .span, html body .content .second .nav-item .nav-link:hover .span {
+              display: none; }
+            html body .content .second .nav-item .nav-link.active .span2, html body .content .second .nav-item .nav-link:hover .span2 {
+              display: flex !important; }
+      html body .content .myCard {
+        width: 180px;
+        height: 100px !important;
+        background: #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 14px;
+        transition: all .5s ease-in-out;
+        cursor: pointer; }
+        html body .content .myCard h5 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000; }
+        html body .content .myCard:hover {
+          background-color: #FFCC91;
+          transform: translateY(-3px); }
+      html body .content .first .nav-item .nav-link {
+        padding: 16px 20px 16px 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: all .4s ease-in-out; }
+        html body .content .first .nav-item .nav-link.active, html body .content .first .nav-item .nav-link:hover {
+          background-color: #1B4D4A;
+          color: #fff; }
+          html body .content .first .nav-item .nav-link.active .span, html body .content .first .nav-item .nav-link:hover .span {
+            display: none; }
+          html body .content .first .nav-item .nav-link.active .span2, html body .content .first .nav-item .nav-link:hover .span2 {
+            display: flex !important; }
+    html body .popular .image {
+      z-index: -1; }
+    html body .popular h2 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 18px;
+      color: #000000;
+      margin-bottom: 29px !important; }
+    html body .popular p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000000; }
+    html body .popular .myCard {
+      border-radius: 10px;
+      background-image: url(../assets/image/card1.png);
+      background-size: cover;
+      width: 100%;
+      height: 170px;
+      padding: 85px 41px 35px 23px; }
+      html body .popular .myCard .sloy {
+        background-color: rgba(255, 204, 145, 0.73);
+        border-radius: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0; }
+    html body .popular .card2 {
+      background-image: url(../assets/image/card2.png); }
+    html body .popular .card3 {
+      background-image: url(../assets/image/card3.png); }
+    html body .popular .btn {
+      z-index: 1;
+      background: #FFFFFF;
+      border-radius: 10px;
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px; }
+    html body .footer-line {
+      margin-top: 109px;
+      width: 100%;
+      height: 0.5px;
+      background-color: #DBDBDB; }
+    html body .pre-footer {
+      padding: 27px 0 29px; }
+      html body .pre-footer ul li a {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000 !important; }
+      html body .pre-footer .span {
+        width: 40px;
+        height: 40px;
+        border: 0.5px solid #A4A4A4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px; }
+    html body .footer {
+      padding-bottom: 27px; }
+      html body .footer h5 {
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #9D9D9D; }
+      html body .footer p {
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 16px;
+        color: #9D9D9D; }
+
+/*# sourceMappingURL=main.css.map */
