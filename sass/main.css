@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 html body {
-  background-color: #0A0A0A;
+  background-color: #415167;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -109,6 +109,8 @@ html body .navBar {
   width: 100%;
   background-color: transparent;
   padding: 30px 0;
+  z-index: 9999;
+  background-color: #4151678f;
 }
 
 html body .navBar ul {
@@ -123,14 +125,20 @@ html body .navBar .myBtn {
   margin-left: auto;
 }
 
-html body .navbarLine {
-  padding-top: 160px;
+html body .header {
+  background: url(../image/headerBg2.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 270px 0 150px;
+  position: relative;
 }
 
-html body .header {
-  padding: 70px 0 150px;
-  position: relative;
-  overflow-x: hidden;
+html body .header .myCol {
+  background: #ffffff14;
+  padding: 20px 19px 20px 30px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 html body .header .headerBorder {
@@ -149,6 +157,8 @@ html body .header h1 {
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
+  text-shadow: 0 0 10px silver;
+  color: #000;
 }
 
 html body .header p {
@@ -157,6 +167,7 @@ html body .header p {
   line-height: 27px;
   margin: 73px 0 85px;
   width: 60%;
+  color: #000;
 }
 
 html body .howWork {
@@ -224,5 +235,9 @@ html body .howWork .blur {
   background: #000000a1;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+
+html body .galary {
+  padding: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */
