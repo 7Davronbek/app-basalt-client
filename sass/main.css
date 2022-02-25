@@ -175,6 +175,10 @@ html body .header {
   position: relative;
 }
 
+html body .header .typed-text {
+  color: #fff;
+}
+
 html body .header .headerBorder {
   position: absolute;
   width: 681px;
