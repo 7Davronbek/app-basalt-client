@@ -11,7 +11,7 @@ html {
 
     body {
         background-color: $backgroundColor;
-    //  background: linear-gradient(0deg, #0A0A0A, #222), #000000; 
+        //  background: linear-gradient(0deg, #0A0A0A, #222), #000000; 
         color: #fff;
         font-family: 'Roboto', sans-serif;
 
@@ -73,7 +73,8 @@ html {
             font-size: 30px;
             line-height: 37px;
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 content: '';
                 position: absolute;
                 top: 50%;
@@ -123,7 +124,7 @@ html {
                     color: #fff;
                 }
             }
-        } 
+        }
 
         .navBar {
             position: absolute;
@@ -332,6 +333,10 @@ html {
 
                 .card-body {
 
+                    img {
+                        padding: 30px;
+                    }
+
                     h3 {
                         font-weight: bold;
                         font-size: 30px;
@@ -353,6 +358,55 @@ html {
         .tabServices {
             padding: 80px 0 50px 0;
 
+            h6 {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: justify;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                font-family: 'Montserrat';
+                margin: 80px 0 50px;
+            }
+
+            h2 {
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 37px;
+                color: #FF7A00;
+                font-family: 'Montserrat';
+                text-align: center;
+            }
+
+            .card {
+
+                .card-body {
+
+                    h5 {
+                        font-size: 24px;
+                        line-height: 29px;
+                        letter-spacing: 0.05em;
+                        margin-top: 25px;
+                        text-align: center;
+                        color: #F17D11;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+        
+                    p {
+                        font-size: 18px;
+                        line-height: 28px;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                        padding: 40px 0 0;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+
             .nav {
 
                 li {
@@ -362,13 +416,14 @@ html {
                         position: relative;
                         height: 200px;
                         overflow: hidden;
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
                         border: 5px solid transparent;
                         border-radius: 6px;
                         user-select: none;
 
                         i {
                             font-style: normal;
+                            font-family: 'Montserrat', sans-serif;
                             font-size: 22px;
                             line-height: 27px;
                             letter-spacing: 0.05em;
@@ -394,8 +449,64 @@ html {
                 }
             }
 
-            h2 {
+            .h2 {
                 margin-bottom: 80px;
+            }
+        }
+
+        .clientAbout {
+            padding: 50px 0;
+
+            h2 {
+                margin-bottom: 60px;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer {
+            background: #000;
+            padding: 40px 0 30px 0;
+
+            h2 {
+                font-size: 50px;
+                font-family: 'Comic Sans MS', sans-serif;
+            }
+
+            .a {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-bottom: 18px;
+            }
+
+            i {
+                font-size: 24px;
+            }
+
+            .myLine {
+                width: 100%;
+                background-color: #1c1c1c;
+                height: 1px;
+                margin: 10px 0 20px 0;
+            }
+
+            h6 {
+                margin: 0 auto;
+                font-size: 12px;
+
+                a {
+                    color: silver;
+                }
             }
         }
 
