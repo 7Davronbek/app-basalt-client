@@ -1,4 +1,4 @@
-$backgroundColor: #415167;
+$backgroundColor: #0A0A0A;
 // #415167 #0A0A0A
 $mainColor: #E19C2A;
 $secondaryColor: #FF7A00;
@@ -6,6 +6,8 @@ $secondaryColor: #FF7A00;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
 
 html {
+    width: 100%;
+    overflow-x: hidden;
 
     body {
         background-color: $backgroundColor;
@@ -65,6 +67,31 @@ html {
             margin-bottom: 0;
         }
 
+        .h2 {
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            line-height: 37px;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 200px;
+                height: 3px;
+                background-color: $secondaryColor;
+            }
+
+            &::after {
+                right: -90px;
+            }
+
+            &::before {
+                left: -90px;
+            }
+        }
+
         img {
             user-select: none;
         }
@@ -104,9 +131,17 @@ html {
             left: 0;
             width: 100%;
             background-color: transparent;
-            padding: 30px 0;
+            // padding: 30px 0;
             z-index: 9999;
-            background-color: #4151678f;
+            // background-color: #4151678f;
+
+            .container {
+                background: #ffffff80;
+                padding: 8px 15px 8px 35px;
+                border-radius: 15px;
+                margin-top: 20px;
+                backdrop-filter: blur(21px);
+            }
 
 
             ul {
@@ -114,6 +149,10 @@ html {
 
                 li {
                     margin-right: 50px;
+
+                    a {
+                        color: #000;
+                    }
                 }
             }
 
@@ -176,29 +215,6 @@ html {
             position: relative;
             padding: 60px 0;
 
-            .h2 {
-                text-align: center;
-                position: relative;
-
-                &::before, &::after {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 200px;
-                    height: 3px;
-                    background-color: $secondaryColor;
-                }
-
-                &::after {
-                    right: -90px;
-                }
-
-                &::before {
-                    left: -90px;
-                }
-            }
-
             h4 {
                 font-weight: normal;
                 user-select: none;
@@ -231,8 +247,48 @@ html {
         }
 
         .galary {
+            padding: 90px 0 50px 0;
 
-            padding: 50px 0;
+            h2 {
+                margin-bottom: 90px;
+            }
+
+            .card {
+                border-radius: 10px;
+                transition: all .5s ease-in-out;
+                position: relative;
+                margin-bottom: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -18px;
+                    right: -16px;
+                    width: 100%;
+                    height: 100%;
+                    border: 10px solid #FF7A00;
+                    z-index: -1;
+                }
+
+                .card-body {
+
+                    h5 {
+                        position: absolute;
+                        z-index: 1;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        text-align: center;
+                        background: #000000a1;
+                        padding: 10px 0;
+                        backdrop-filter: blur(10px);
+                    }
+                }
+
+                &:hover {
+                }
+            }
         }
 
     }
