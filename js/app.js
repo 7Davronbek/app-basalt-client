@@ -21,3 +21,4 @@ function scrollFunction() {
     document.querySelector('.Navbar').classList.remove('actived')
   }
 }
+
