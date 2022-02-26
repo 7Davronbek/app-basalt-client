@@ -8,6 +8,8 @@ html body {
   background-color: #0A0A0A;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html body ul,
@@ -73,6 +75,7 @@ html body .h2 {
   position: relative;
   font-size: 30px;
   line-height: 37px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html body .h2::before, html body .h2::after {
@@ -87,11 +90,11 @@ html body .h2::before, html body .h2::after {
 }
 
 html body .h2::after {
-  right: -30px;
+  right: -100px;
 }
 
 html body .h2::before {
-  left: -30px;
+  left: -100px;
 }
 
 html body img {
@@ -110,6 +113,17 @@ html body a {
 html body a:hover {
   text-decoration: none !important;
   color: #ccc;
+}
+
+html body .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000a1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 html body .myBtn {
@@ -267,7 +281,6 @@ html body .header h1 {
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(192, 192, 192, 0.329);
   color: #fff;
 }
 
@@ -310,17 +323,6 @@ html body .howWork h3 {
   letter-spacing: 0.09em;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-}
-
-html body .howWork .blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000000a1;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 
 html body .galary {
@@ -403,6 +405,13 @@ html body .galary .card .card-body h5 {
 
 html body .galary .card .card-body img {
   border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+html body .galary .card:hover img {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 html body .galary .card:hover i {
@@ -417,8 +426,11 @@ html body .blog .col-lg-4:nth-child(2) {
   margin-top: 150px;
 }
 
-html body .blog .card .card-body img {
-  padding: 30px;
+html body .blog .card {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  padding: 30px 20px;
+  overflow: hidden;
 }
 
 html body .blog .card .card-body h3 {
@@ -434,6 +446,22 @@ html body .blog .card .card-body p {
   line-height: 30px;
   color: #e3e3e3;
   margin: 55px 0 60px;
+}
+
+html body .blog .card .card-body img {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+html body .blog .card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(192, 192, 192, 0.521);
+          box-shadow: 0 0 10px rgba(192, 192, 192, 0.521);
+}
+
+html body .blog .card:hover img {
+  -webkit-transform: scale(1.08) rotate(5deg);
+          transform: scale(1.08) rotate(5deg);
+  border-radius: 30px;
 }
 
 html body .tabServices {
@@ -535,6 +563,14 @@ html body .tabServices .h2 {
   margin-bottom: 80px;
 }
 
+html body .aboutUs {
+  background: url(../image/headerImg.png) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
+}
+
 html body .clientAbout {
   padding: 50px 0;
 }
@@ -545,6 +581,42 @@ html body .clientAbout h2 {
 
 html body .clientAbout h3 {
   margin-bottom: 20px;
+}
+
+html body .zed {
+  z-index: 10;
+}
+
+html body .aboutCompany {
+  background: url(../image/aboutBg.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+html body .aboutCompany .blur {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  background-color: #00000073;
+}
+
+html body .aboutCompany h4 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #FF7A00;
+  text-transform: uppercase;
 }
 
 html body .footer {
