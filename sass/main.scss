@@ -134,14 +134,16 @@ html {
             background-color: transparent;
             // padding: 30px 0;
             z-index: 9999;
+            transition: all .4s ease-in-out;
             // background-color: #4151678f;
 
             .container {
-                background: #ffffff80;
+                background: #fcff354f;
                 padding: 8px 15px 8px 35px;
                 border-radius: 15px;
                 margin-top: 20px;
                 backdrop-filter: blur(21px);
+                transition: all .4s ease-in-out;
             }
 
 
@@ -152,13 +154,37 @@ html {
                     margin-right: 50px;
 
                     a {
-                        color: #000;
+                        font-weight: 500;
+                        letter-spacing: 1px;
                     }
                 }
             }
 
             .myBtn {
                 margin-left: auto;
+                background-color: #ffffff17;
+            }
+
+            &.active {
+                backdrop-filter: blur(21px);
+                background: #ffffff4f;
+                position: fixed;
+                animation: anim 1s ease-in-out;
+
+                .container {
+                    background: transparent;
+                    backdrop-filter: none;
+                }
+            }
+
+            @keyframes anim {
+                0% {
+                    top: -100%;
+                }
+
+                100% {
+                    top: 0;
+                }
             }
         }
 
