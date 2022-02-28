@@ -177,7 +177,7 @@ html {
                     position: absolute;
                     width: 25px;
                     height: 2px;
-                    background-color: #fff;
+                    background-color: #000;
                     border-radius: 20px;
                     transition: all .5s ease-in-out;
                 }
@@ -200,7 +200,8 @@ html {
                 &.burgered {
 
                     .burger1 {
-                        transform: translateY(10px) rotate(45deg)
+                        transform: translateY(10px) rotate(45deg);
+                        background-color: $secondaryColor;
                     }
 
                     .burger2 {
@@ -209,6 +210,7 @@ html {
 
                     .burger3 {
                         transform: translateY(-8px) rotate(-45deg);
+                        background-color: $secondaryColor;
                     }
                 }
 
@@ -327,9 +329,14 @@ html {
                 }
             }
 
+            @media(max-width: 992px) {
+                backdrop-filter: blur(21px);
+                background: #ffffffdc;
+            }
+
             &.active {
                 backdrop-filter: blur(21px);
-                background: #ffffff94;
+                background: #ffffffdc;
                 position: fixed;
                 animation: anim .8s ease-in-out;
 
