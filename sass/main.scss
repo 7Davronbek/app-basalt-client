@@ -329,7 +329,7 @@ html {
 
             &.active {
                 backdrop-filter: blur(21px);
-                background: #ffffff4f;
+                background: #ffffff94;
                 position: fixed;
                 animation: anim .8s ease-in-out;
 
@@ -831,6 +831,41 @@ html {
 
                 a {
                     color: silver;
+                }
+            }
+        }
+
+        .portfolio {
+            
+            .image-gallary {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                grid-auto-rows: 250px;
+                grid-auto-flow: dense;
+                grid-gap: 20px;
+
+                .image-box {
+                    position: relative;
+                    background-color: red;
+                    overflow: hidden;
+
+                    &:nth-child(7n + 1) {
+                        grid-column: span 2;
+                        grid-row: span 2;
+
+                        @media(max-width: 767px) {
+                            grid-column: unset;
+                            grid-row: unset;
+                        }
+                    } 
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all .4s ease-in-out;
+                    }
                 }
             }
         }
