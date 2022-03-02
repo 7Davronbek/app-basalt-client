@@ -32,7 +32,7 @@
     <div class="navBar">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-2 col-4">
+          <div class="col-lg-2 col-6">
             <img loading="lazy" src="image/mainLogo.png" alt="" class="w-100" />
           </div>
 
@@ -83,9 +83,13 @@
         <div class="row align-items-center">
           <div data-aos="fade-right" style="z-index: 10" class="col-lg-6 myCol">
             <h1>Строительство и ремонт <span class="typed-text"></span></h1>
-            <p>Надежное будущее строим вместе</p>
 
-            <button class="btn myBtn outLine">Получить консультацию</button>
+            <div class="desktop">
+              <p>Надежное будущее строим вместе</p>
+  
+              <button class="btn myBtn outLine">Получить консультацию</button>
+            </div>
+
           </div>
           <div data-aos="fade-left" style="z-index: 10" class="col-lg-6 myCol">
             <img
@@ -95,6 +99,13 @@
               class="w-100"
               alt=""
             />
+            
+            <div class="mobile">
+              <p>Надежное будущее строим вместе</p>
+  
+              <button class="btn myBtn outLine">Получить консультацию</button>
+            </div>
+
             <div class="headerBorder"></div>
           </div>
         </div>
@@ -144,8 +155,6 @@
       <div class="blur"></div>
     </div>
 
-
-    
     <div class="galary">
       <div class="container">
         <div class="row">
@@ -153,7 +162,7 @@
             <h2 data-aos="zoom-in" class="h2">ГАЛЕРЕЯ РАБОТ</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div data-aos="fade-up-left" class="mb-5 col-lg-4 col-md-6">
             <div class="card h-100">
               <div class="card-body position-relative">
@@ -215,7 +224,7 @@
             <h2  data-aos="zoom-in" class="h2">Блог</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div data-aos="fade-left" class="col-lg-4 col-md-6">
             <a href="./pages/portfolio1.html">
               <div class="card">
@@ -338,7 +347,7 @@
           <div class="col-12">
             <h2 data-aos="zoom-in" class="h2">Клиенты o нас</h2>
           </div>
-          <div data-aos="fade-up-right" class="col-12">
+          <div data-aos="fade-up-right" class="col-12 p-0">
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -365,7 +374,7 @@
                     loading="lazy"
                     class="d-block w-100"
                     src="image/main.jpg"
-                    style="height: 550px; opacity: 0.5"
+                    style="height: 550px; opacity: 0.5;"
                     alt="First slide"
                   />
                   <div class="carousel-caption d-none d-md-block">
@@ -382,7 +391,7 @@
                     loading="lazy"
                     class="d-block w-100"
                     src="image/carousel.jpg"
-                    style="height: 550px; opacity: 0.5"
+                    style="height: 550px; opacity: 0.5;"
                     alt="Second slide"
                   />
                   <div class="carousel-caption d-none d-md-block">
@@ -402,7 +411,7 @@
                     loading="lazy"
                     class="d-block w-100"
                     src="image/carousel2.jpg"
-                    style="height: 550px; opacity: 0.5"
+                    style="height: 550px; opacity: 0.5;"
                     alt="Third slide"
                   />
                   <div class="carousel-caption d-none d-md-block">
@@ -448,12 +457,13 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 mb-5 mb-lg-0 text-center">
-            <h2>TMT</h2>
-            <h1>Teploizalyatsiya</h1>
+          <div class="col-lg-3 col-6 mx-auto mx-lg-0 mb-3 mb-lg-0 text-center">
+            <div class="myImgWrap text-center">
+              <img src="../image/mainLogo.png" alt="" class="w-100" />
+            </div>
           </div>
           <div
-            class="col-lg-2 mb-5 mb-lg-0 text-center text-lg-left offset-lg-1"
+            class="col-lg-2 d-lg-block d-none text-center text-lg-left offset-lg-1"
           >
             <h3>Меню</h3>
 
@@ -463,7 +473,7 @@
             <p>Контакты</p>
           </div>
 
-          <div class="col-lg-2 mb-lg-0 text-center text-lg-left">
+          <div class="col-lg-2 d-lg-block d-none text-center text-lg-left">
             <h3>Новости и блог</h3>
 
             <p>Блог</p>

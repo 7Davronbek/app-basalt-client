@@ -453,10 +453,26 @@ html {
             padding: 270px 0 150px;
             position: relative;
 
+            .desktop {
+                display: block;
+
+                @media(max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            .mobile {
+                display: none;
+
+                @media(max-width: 992px) {
+                    display: block;
+                }
+            }
+
             .myCol {
 
                 @media(max-width: 992px) {
-                    margin-top: 125px;
+                    margin-top: 100px;
                 }
             }
 
@@ -494,6 +510,7 @@ html {
 
                 @media(max-width: 767px) {
                     font-size: 36px;
+                    line-height: 45px;
                 }
             }
 
@@ -984,6 +1001,10 @@ html {
             .myImgWrap {
                 background: #fff;
                 border-radius: 0 28px;
+
+                @media(max-width: 560px) {
+                    border-radius: 0 20px;
+                }
             }
 
             h2 {
@@ -993,6 +1014,10 @@ html {
 
             .a {
                 font-size: 30px;
+
+                @media(max-width: 767px) {
+                    font-size: 25px;
+                }
             }
 
             h3 {

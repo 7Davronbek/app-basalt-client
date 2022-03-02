@@ -540,9 +540,29 @@ html body .header {
   position: relative;
 }
 
+html body .header .desktop {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  html body .header .desktop {
+    display: none;
+  }
+}
+
+html body .header .mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  html body .header .mobile {
+    display: block;
+  }
+}
+
 @media (max-width: 992px) {
   html body .header .myCol {
-    margin-top: 125px;
+    margin-top: 100px;
   }
 }
 
@@ -583,6 +603,7 @@ html body .header h1 {
 @media (max-width: 767px) {
   html body .header h1 {
     font-size: 36px;
+    line-height: 45px;
   }
 }
 
@@ -1128,6 +1149,12 @@ html body .footer .myImgWrap {
   border-radius: 0 28px;
 }
 
+@media (max-width: 560px) {
+  html body .footer .myImgWrap {
+    border-radius: 0 20px;
+  }
+}
+
 html body .footer h2 {
   font-size: 50px;
   font-family: 'Comic Sans MS', sans-serif;
@@ -1135,6 +1162,12 @@ html body .footer h2 {
 
 html body .footer .a {
   font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  html body .footer .a {
+    font-size: 25px;
+  }
 }
 
 html body .footer h3 {
