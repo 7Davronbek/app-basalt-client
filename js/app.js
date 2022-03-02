@@ -22,11 +22,13 @@
 //   }
 // }
 
-const spiner = document.querySelector(".spiner");
+                
+const spiner = document.querySelector('.spiner')
 
-document.addEventListener("load", () => {
-  spiner.style.display = "none ";
-});
+window.addEventListener('load', () => {
+    spiner.classList.add('none')
+})  
+      
 
 function navbar() {
   const nav = document.querySelector(".navBar");
