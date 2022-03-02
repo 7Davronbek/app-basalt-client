@@ -1319,6 +1319,23 @@ html body .seePortfolio {
   padding: 150px 0 50px;
 }
 
+html body .seePortfolio .table {
+  border: 0;
+}
+
+html body .seePortfolio ::-webkit-scrollbar {
+  height: 5px;
+}
+
+html body .seePortfolio ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html body .seePortfolio ::-webkit-scrollbar-thumb {
+  background: #494949;
+  border-radius: 30px;
+}
+
 html body .seePortfolio h2 {
   color: #FF7A00;
   font-size: 40px;
