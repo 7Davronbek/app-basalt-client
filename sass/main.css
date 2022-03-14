@@ -1507,6 +1507,28 @@ html body .seePortfolio .img img {
      object-fit: cover;
 }
 
+html .portfolioSee {
+  padding: 150px 0 50px;
+}
+
+html .portfolioSee h5, html .portfolioSee h6 {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+html .portfolioSee h6 {
+  margin-bottom: 10px !important;
+}
+
+html .portfolioSee p {
+  padding-left: 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #FF7A00;
+}
+
 html .myBg {
   position: relative;
   width: 100%;

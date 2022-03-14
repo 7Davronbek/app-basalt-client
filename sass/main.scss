@@ -1337,6 +1337,28 @@ html {
 
     }
 
+    .portfolioSee {
+        padding: 150px 0 50px;
+
+        h5, h6 {
+            margin-top: 10px;
+            padding-left: 20px;
+            font-size: 25px;
+            line-height: 37px;
+        }
+
+        h6 {
+            margin-bottom: 10px !important;
+        }
+
+        p {
+            padding-left: 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            color: $secondaryColor;
+        }
+    }
+
 
     .myBg {
         position: relative;
