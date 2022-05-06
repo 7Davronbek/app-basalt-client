@@ -1,7 +1,7 @@
 $backgroundColor: #0A0A0A;
 // #415167 #0A0A0A
-$mainColor: #E19C2A;
-$secondaryColor: #FF7A00;
+$mainColor: #FEB040;
+$secondaryColor: #FEB040;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -673,7 +673,7 @@ html {
         .galaryHeader {
             padding: 60px 0;
             height: 400px;
-            background: url(../image/products.jpg) no-repeat center;
+            background: url(../image/products.webp) no-repeat center;
 
             &.myTop {
                 background-position-y: -260px;
@@ -906,7 +906,7 @@ html {
         }
 
         .aboutUs {
-            background: url(../image/headerBg2.jpeg) no-repeat center;
+            background: url(../image/headerBg2.webp) no-repeat center;
             background-attachment: fixed;
             background-size: cover;
             position: relative;
